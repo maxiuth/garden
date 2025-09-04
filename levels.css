@@ -53,3 +53,62 @@ section {
     grid-row: 1 / span 2;
   }
 }
+
+#level-5 {
+  grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+
+  .carrots {
+    grid-row: 1 / span 3;
+  }
+
+  .onions {
+    grid-row: 1 / span 2;
+    grid-column: 3 / 4;
+  }
+
+  .peas {
+    grid-row: 2 / 3;
+    grid-column: 4 / 6;
+  }
+
+  .tomatoes {
+    grid-column: 2 / span 3;
+  }
+
+  .lettuce {
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+  }
+}
+
+#level-6 {
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  .peas {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .onions {
+    grid-row: 2 / 3;
+  }
+
+  .tomatoes {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+
+  .lettuce {
+    grid-row: 3 / 4;
+    grid-column: 1 / span 3;
+  }
+
+  .carrots {
+    grid-column: 1 / span 3;
+  }
+}
+
+#level-7 {
+  grid-template-columns: repeat(5, 1fr);
+}
